@@ -1,29 +1,9 @@
-/* logo, nav-menu, button, icon, contact (reaction) #2196F3  #AFB1B8 */
-/* logo #000000 */     
-/* contact #757575 */ 
-/* nav-menu, filter-button #212121 #ffffff */   
-/* title, link #ffffff #212121 */   
-/* text #757575 */ 
-/* background #ffffff */ 
-/* section-bg #F5F4FA */
-
-                                               /* common */
-/* html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-} */
-
-:root {
-    --title-color: #212121;
-    --primary-white-color: #ffffff;
-    --accent-color: #2196F3;
-    --font-logo: 'Raleway', sans-serif;
-    --font-text: 'Roboto', sans
-    }
+    $primary-white-color: #ffffff;
+    $secondary-color: #757575;
+    $accent-color: #2196F3;
+    $title-color: #212121;
+    $font-logo: 'Raleway', sans-serif;
+    $font-text: 'Roboto', sans;
+    
                                 
     

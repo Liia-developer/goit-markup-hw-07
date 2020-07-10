@@ -1,167 +1,165 @@
- /* header */
-                            
-                                /* logo */
+            
+                   /* logo */
 
-                                .container {
-                                    width: 1200px;
-                                    padding-left: 15px;
-                                    padding-right: 15px;
-                                    margin-left: auto;
-                                    margin-right: auto;
+.container {
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
                                 
-                                    /* outline: 2px solid tomato;  */
-                                }
+/* outline: 2px solid tomato;  */
+}
                                 
-                                .logo {
-                                    color: #000000;
-                                    font-family: var(--font-logo);
-                                    font-weight: bold;
-                                    font-size: 26px;
-                                    line-height: 1.20;
-                                    text-decoration: none;
-                                }
+.logo {
+    color: #000000;
+    font-family: $font-logo;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.20;
+    text-decoration: none;
+}
                                                             
-                                .logo-design {
-                                    color: var(--accent-color);
-                                }
-                                                            /* navigation */
+.logo-design {
+    color: $accent-color;
+}
+             /* navigation */
                                 
-                                .nav-flex {
-                                    display: flex;
-                                    align-items: center;
-                                }
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
                                 
-                                .menu-nav {
-                                    display: flex;
-                                    margin-left: 85px;
-                                }
+.menu-nav {
+    display: flex;
+    margin-left: 85px;
+}
                                 
-                                .menu-nav .item:not(:last-child) {
-                                    margin-right: 50px;
-                                }
+.menu-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
                                 
-                                .menu-nav .link-nav {
-                                    display: block;
+.menu-nav .link-nav {
+    display: block;
                                 
-                                    padding-top: 32px;
-                                    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
                                 
-                                    color: #212121;
-                                    font-weight: 500;
-                                    font-size: 14px;
-                                    line-height: 1.14;
-                                    letter-spacing: 0.02em;
-                                    text-decoration: none;
-                                }
+    color: $title-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
                                                             
-                                .link-nav:hover,
-                                .link-nav:focus {
-                                    color: var(--accent-color);
-                                    outline: transparent;
-                                }
+.link-nav:hover,
+.link-nav:focus {
+    color: $accent-color;
+    outline: transparent;
+}
                                 
-                                .menu-link {
-                                    position: relative;
-                                }
+.menu-link {
+    position: relative;
+}
                                 
-                                .underline-link::after {
-                                    content: '';
-                                    display: block;
-                                    position: absolute;
+.underline-link::after {
+    content: '';
+    display: block;
+    position: absolute;
                                 
-                                    width: 100%;
-                                    height: 4px;
+    width: 100%;
+    height: 4px;
                                 
-                                    background-color: var(--accent-color);
-                                    border-radius: 2px;
+    background-color: $accent-color;
+    border-radius: 2px;
                                 
-                                    left: 0;
-                                    bottom: 0;
+    left: 0;
+    bottom: 0;
                                 
-                                    transform: scaleX(0);
-                                }
+    transform: scaleX(0);
+}
                                 
-                                .underline-link:hover::after {
-                                    transform: scaleX(1);
-                                    transition-duration: 250ms;
-                                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                                }
+.underline-link:hover::after {
+    transform: scaleX(1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
                                 
-                                .underline-link:focus::after {
-                                    transform: scaleX(1);
-                                    transition-duration: 250ms;
-                                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                                    outline: transparent;
-                                }
+.underline-link:focus::after {
+    transform: scaleX(1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+}
                                 
-                                .underline-link:active::after {
-                                    transform: scaleX(1);
-                                    transition-duration: 250ms;
-                                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                                }
-                                
-                                
+.underline-link:active::after {
+    transform: scaleX(1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+          
                                  
-                                                                 /* address */
+                  /* contact */
                                 
-                                .contact-nav {
-                                    display: flex;
-                                    margin-left: auto;
-                                }
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
                                 
-                                .contact-nav .item:not(:last-child) {
-                                    margin-right: 30px;
-                                }
+.contact-nav .item:not(:last-child) {
+    margin-right: 30px;
+}
                                 
-                                .contact-nav .link-contact {
-                                    display: block;
+.contact-nav .link-contact {
+    display: block;
                                 
-                                    padding-top: 32px;
-                                    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
                                         
-                                    color: #757575;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    font-size: 14px;
-                                    line-height: 1.14;
-                                    letter-spacing: 0.02em;
-                                    text-decoration: none;
-                                }
+    color: $secondary-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
                                      
-                                .link-contact:hover,
-                                .link-contact:focus {
-                                    color: var(--accent-color);
-                                    outline: transparent;
-                                }                            
+.link-contact:hover,
+.link-contact:focus {
+    color: #2196F3;
+    outline: transparent;
+}                            
                                 
-                                .link-contact .icon-contact-mail {
-                                    fill: #757575;
-                                }
+.link-contact .icon-contact-mail {
+    fill: #757575;
+}
                                 
-                                .icon-contact-mail {
-                                    height: 12px;
-                                    width: 16px;
-                                    margin-right: 10px;
-                                }
+.icon-contact-mail {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+}
                                 
-                                .link-contact:hover,
-                                .link-contact:focus .icon-contact-mail {
-                                    --color3: var(--accent-color);
-                                    outline: transparent;
-                                }
+.link-contact:hover,
+.link-contact:focus .icon-contact-mail {
+    --color3: #2196F3;
+    outline: transparent;
+}
                                 
-                                .link-contact .icon-contact-phon {
-                                    fill: #757575;
-                                }
+.link-contact .icon-contact-phon {
+    fill: #757575;
+}
                                 
-                                .icon-contact-phon {
-                                    height: 15px;
-                                    width: 10px;
-                                    margin-right: 10px;
-                                }
+.icon-contact-phon {
+    height: 15px;
+    width: 10px;
+    margin-right: 10px;
+}
                                 
-                                .link-contact:hover,
-                                .link-contact:focus .icon-contact-phon {
-                                    --color3: var(--accent-color);
-                                    outline: transparent;
-                                }
+.link-contact:hover,
+.link-contact:focus .icon-contact-phon {
+    --color3: #2196F3;
+    outline: transparent;
+}
