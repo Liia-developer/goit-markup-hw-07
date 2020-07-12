@@ -8,8 +8,15 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     background-color: rgba(0, 0, 0, 0.2);
-}
-    
+
+    &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+} } }
+
 .modal {
     position: absolute;
     top: 50%;
@@ -26,18 +33,8 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-}
-    
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-    
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-}
-    
-.modal-title {
+
+    &-title {
     margin: 0;
     padding: 40px 40px 30px 40px;
     
@@ -48,20 +45,8 @@
     letter-spacing: 0.03em;
     
     color: #212121;
-}
-    
-.modal-form {
-    position: relative;
-    
-    margin-left: 40px;
-    margin-bottom: 30px;
-    margin-right: 0;
-        
-    width: 450px;
-    height: 40px;
-}
-    
-.modal-close {
+    }
+    &-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -77,17 +62,27 @@
     height: 30px;
     
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);         
-}
+    border: 1px solid rgba(0, 0, 0, 0.1);
     
-.icon-close {
+    &-icon {
     fill: #212121;
-}
-    
-.modal-close:hover > .icon-close {
+    }
+    &:hover > .modal-close-icon {
     --color3: #2196F3;
+} } }
+    
+.modal-form {
+    position: relative;
+    
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-right: 0;
+        
+    width: 450px;
+    height: 40px;
 }
     
+   
 .modal-label {
     position: absolute;
     
@@ -102,22 +97,7 @@
     line-height: 1.1;
     letter-spacing: 0.01em;
 }
-    
-.modal-fild {
-    width: 100%;
-    padding: 10px 40px;
-    
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    
-    outline: none;
-}
-    
-.modal-fild:focus {
-    border: 1px solid $accent-color;
-    border-radius: 4px;
-}
-    
+
 .modal-icon {
     position: absolute; 
     top: 0;
@@ -126,19 +106,31 @@
     
     fill: #212121;
         
-}
+}   
+
+.modal-fild {
+    width: 100%;
+    padding: 10px 40px;
     
-.modal-fild:focus ~ .modal-icon {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    outline: none;
+
+    &:focus {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    }
+    &:focus ~ .modal-icon {
     --color3: #2196F3;
-}
-    
-.modal-fild:focus + .modal-label, 
-.modal-fild:not(:placeholder-shown) + .modal-label {
+    }
+    &:focus + .modal-label, 
+    &:not(:placeholder-shown) + .modal-label {
     transform: translate(-25px, -40px);
     
     color: $accent-color;
-}
-    
+} }
+
 textarea {
     resize: none;
 }
@@ -152,24 +144,7 @@ textarea {
     margin-left: 40px;
     margin-bottom: 20px;
 }
-    
-.modal-textarea {
-    width: 100%;
-    height: 120px;
-    
-    padding: 12px 15px;
-        
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    
-    outline: none;
-}
-    
-.modal-textarea:focus {
-    border: 1px solid $accent-color;
-    border-radius: 4px;
-}
-    
+
 .textarea-label {
     position: absolute;
     
@@ -183,14 +158,29 @@ textarea {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.01em;
-}
+}  
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
     
-.modal-textarea:focus + .textarea-label,
-.modal-textarea:not(:placeholder-shown) + .textarea-label {
+    padding: 12px 15px;
+        
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    outline: none;
+
+    &:focus {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    }
+    &:focus + .textarea-label,
+    &:not(:placeholder-shown) + .textarea-label {
     transform: translate(15px, -20px);
     
     color: $accent-color;
-}
+} }
     
 .checkbox {
     position: absolute;
@@ -198,17 +188,8 @@ textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
-    
-.checkbox:checked + .checkbox-icon {
-    border-color: $accent-color;
-    background-color: $accent-color;
-    background-image: url('../images/check.svg');
-    background-size: contain;
-    background-origin: border-box;
-}
-    
-.checkbox-icon  {
+
+    &-icon  {
     display: inline-block;
     
     margin-right: 9px;
@@ -216,9 +197,15 @@ textarea {
     height: 15px;
     border: 1px solid $title-color;
     border-radius: 1px;
-}
-    
-.checkbox-label {
+
+    .checkbox:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url('../images/check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    } }
+    &-label {
     display: flex;
     align-items: center;
     
@@ -229,13 +216,12 @@ textarea {
     line-height: 1.8;
     
     letter-spacing: 0.03em;
-}
-    
-.accept {
+    }
+    &-accept {
     margin-left: 4px;
     
     color: $accent-color;
-}
+} }
     
 .button-close {
     margin-top: 30px;
@@ -243,15 +229,13 @@ textarea {
     min-width: 200px;
     min-height: 50px;
     
-    background-color: $accent-color;
-    
     font-weight: bold;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
     
     color: $primary-white-color;
-    
+    background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }

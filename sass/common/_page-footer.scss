@@ -4,22 +4,15 @@ footer {
     background-color: #2F303A;
 }
             
-             /* main footer container */
+             /* footer container */
 .footer-flex {
      display: flex;
 }
-                         
              /* address container */
-.address-flex {
+.address {
     margin-top: 45px;
-}
-                                        
-.logo-footer {
-    display: inline-block;
-    margin-bottom: 8px;
-}
-                                        
-.address-text {
+
+    &-text {
     margin-bottom: 9px;
     min-width: 220px;
                                         
@@ -29,8 +22,8 @@ footer {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-}
-                                        
+} }
+                               
 .mail-footer {
     display: inline-block;
     margin-bottom: 9px;
@@ -50,17 +43,15 @@ footer {
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-                                        
-
-                /* social container */
-.social-flex {
+      
+            /* social container */
+.social {
     justify-content: left;
                                         
     margin-top: 57px;
     margin-left: 68px;
-}
 
-.contact {
+    &-contact {
     display: inline-block;
     margin-bottom: 20px;
                                         
@@ -70,22 +61,21 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}    
-
-.social {
+    }
+    &-list {
     display: flex;
-}
-                                        
-.icon-send {
-    height: 24px;
-    width: 24px;
-                                        
-    margin-left: 10px;
-    margin-right: 10px;
-}
-                                        
+} }
+
 .icon-footer:not(:first-child) {
     margin-left: 10px;
+}
+
+.icon-social {
+    padding: 0;
+    margin: 0;
+    
+    height: 20px;
+    width: 20px;
 }
                                         
 .social-link-second {
@@ -101,33 +91,40 @@ footer {
                                         
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.1);
-}
-                                        
-.social-link-second:hover,
-.social-link-second:focus {
+
+    &:hover,
+    &:focus {
     background-color: $accent-color;
     outline: transparent;
-}
-                                        
-.social-link-second:hover,
-.social-link-second:focus .icon-social {
+    } 
+    &:hover,
+    &:focus .icon-social {
     --color3: #ffffff;
     outline: transparent;
-}
-                                        
-                    /* subscriber container */
+} }
+                                      
+            /* subscriber container */
 .subscribe {
     margin-top: 57px;
     margin-left: 90px;
-}
+    &-contact {
+    display: inline-block;
+    margin-bottom: 20px;
+                                            
+    color: $primary-white-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;  
+} }
                                         
 .footer-form {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-                                        
-.footer-input {
+
+    &-input {
     width: 355px;
                                         
     padding: 15px 16px;
@@ -147,14 +144,19 @@ footer {
     background: #2F303A;
                                             
     color: rgba(255, 255, 255, 0.6);
-}
+} }
                                         
+.icon-send {
+    height: 24px;
+    width: 24px;
+                                        
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
 .button-footer {
     display: inline-flex;
     justify-content: center;
-}
-                                        
-.button-footer {
     align-items: left;
                                         
     height: 50px;
@@ -164,8 +166,7 @@ footer {
     padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 10px;
-    /* padding-right: 30px; */
-                                            
+                                                
     border-radius: 4px;    
                                         
     color: $primary-white-color;
@@ -180,14 +181,12 @@ footer {
     letter-spacing: normal;
 }
                                         
-                    /* copy container */
-.copy-flex {
+                /* copy container */
+.cont-flex {
     padding-top: 18px;
     padding-bottom: 21px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-                                        
-.copy {
+    &-copy {
     margin-bottom: 0;
                                         
     color: rgba(255, 255, 255, 0.4);
@@ -196,6 +195,8 @@ footer {
     line-height: 2;
     text-align: center;
     letter-spacing: 0.03em;
-}
+} }
+                                        
+
                                         
                                         

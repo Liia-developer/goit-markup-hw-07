@@ -19,11 +19,25 @@
 .invisible {
     display: none;
 }                 
+                     /* main-div */ 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+                               
+/* outline: 2px solid tomato;  */
+}
+
+.section {
+    margin-bottom: 94px;
+}
                   /* main - section */
 
                      /* h2 */
 
- .section-title {
+.section-title {
     margin-bottom: 50px;
                     
     color: $title-color;

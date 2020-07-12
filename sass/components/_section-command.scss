@@ -10,35 +10,21 @@
     
 .command {
     display: flex;
-}
-    
-.command-shadow {
+    justify-content: center;
+
+    &-shadow {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
-}
-    
-.command .item:not(:first-child) {
+    }
+    .item:not(:first-child) {
     margin-left: 30px;
-}
-    
-.foto-command {
+    }
+    &-foto {
     margin-bottom: 30px;
-}
-    
-.command-text {
-    margin-bottom: 16px;
-    
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    
-    text-align: center;
-}
-                            /* h3 */
-.title-name {
+    }
+    &-name {
     margin-bottom: 10px;
     
     color: $title-color;
@@ -48,8 +34,18 @@
     letter-spacing: 0.03em;
     
     text-align: center;
-}
+    }
+    &-text {
+    margin-bottom: 16px;
     
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    
+    text-align: center;
+} }
+
 .social-first {
     display: flex;
     
@@ -58,15 +54,19 @@
     margin-bottom: 24px;
     margin-right: 32px;
 }
-    
-.social-command {
-    justify-content: center;
-}
-    
+ 
 .icon-item:not(:first-child) {
     margin-left: 10px;
 }
+
+.icon-social {
+    padding: 0;
+    margin: 0;
     
+    height: 20px;
+    width: 20px;
+}   
+
 .social-link {
     display: inline-flex;
     justify-content: center;
@@ -80,28 +80,22 @@
     
     border-radius: 50px;
     background-color: transparent;
-    }
-    
-.icon-social {
-    padding: 0;
-    margin: 0;
-    
-    height: 20px;
-    width: 20px;
-}
-    
-.social-link .icon-social {
+   
+    .icon-social {
     fill: #AFB1B8;
-}
-    
-.social-link:hover,
-.social-link:focus {
+    }
+    &:hover,
+    &:focus {
     background-color: #2196F3;
     outline: transparent;
-}
-    
-.social-link:hover,
-.social-link:focus .icon-social {
+    }
+    &:hover,
+    &:focus .icon-social {
     --color3: #FFFFFF;
     outline: transparent;
-}
+} }
+    
+
+    
+
+    
